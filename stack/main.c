@@ -24,7 +24,7 @@ int main() {
     printStack(&stack);
 
     pop(&stack);
-    peek(&stack);
+    top(&stack);
     printStack(&stack);
 
     push(&stack, 18);

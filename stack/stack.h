@@ -1,3 +1,7 @@
+/**
+ * @brief This header file represent the structure and functions of the stack data structure
+ * 
+ */
 #define TRUE 1
 #define FALSE 0
 
@@ -11,7 +15,14 @@ int initStack(pStack *stk, int size);
 
 int push(pStack *stk, int data);
 int pop(pStack *stk);
-int peek(pStack *stk);
+
+/**
+ * @brief This function return the top value in the stack
+ * 
+ * @param stk 
+ * @return int 
+ */
+int top(pStack *stk);
 int isFull(pStack *stk);
 int isEmpyt(pStack *stk);
 int printStack(pStack *stk);

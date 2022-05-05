@@ -40,7 +40,7 @@ int pop(pStack *stk) {
     return 0;
 }
 
-int peek(pStack *stk) {
+int top(pStack *stk) {
     return (*stk)->arr[(*stk)->top];
 }
 
