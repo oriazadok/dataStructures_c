@@ -15,7 +15,7 @@ main.o: main.c stack.h
 stack.o: stack.c stack.h
 	$(CC) $(CFLAGS) -c stack.c
 
-.PHONY: clean all
+.PHONY: all clean
 
 clean:
-	rm -f *.o *.a *.so stack
+	rm -f *.o stack

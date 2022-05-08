@@ -14,7 +14,7 @@ main.o: main.c queue.h
 queue.o: queue.c queue.h
 	$(CC) $(CFLAGS) -c queue.c
 
-.PHONY: clean all
+.PHONY: all clean
 
 clean:
-	rm -f *.o *.a *.so queue
+	rm -f *.o queue

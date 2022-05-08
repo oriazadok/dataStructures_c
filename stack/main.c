@@ -4,18 +4,24 @@
 
 
 int main() {
-
-    int size;
-    printf("Enter the maximum size of the stack\n");
-    scanf("%d", &size);
     pStack stack;
-    printf("here\n");
-    initStack(&stack, size);
+    
+    initStack(&stack);
+
+    pop(&stack);
 
     push(&stack, 1);
     push(&stack, 2);
+    
+    pop(&stack);
+    pop(&stack);
+    pop(&stack);
+
     push(&stack, 3);
     push(&stack, 4);
+
+    printf("Size of the stack is %d\n", size(&stack));
+    
     push(&stack, 5);
     printStack(&stack);
 
@@ -23,8 +29,9 @@ int main() {
     pop(&stack);
     printStack(&stack);
 
+    printf("Top: %d\n", top(&stack));
     pop(&stack);
-    top(&stack);
+    printf("Top: %d\n", top(&stack));
     printStack(&stack);
 
     push(&stack, 18);

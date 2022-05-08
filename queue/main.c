@@ -6,8 +6,18 @@ int main() {
     pQueue queue;
 
     initQueue(&queue);
+
+    deQueue(&queue);
+
     enQueue(&queue, 1);
     enQueue(&queue, 2);
+
+    printf("Size of Queue is %d\n", size(&queue)); 
+    
+    deQueue(&queue);
+    deQueue(&queue);
+    deQueue(&queue);
+
     enQueue(&queue, 3);
     enQueue(&queue, 4);
     enQueue(&queue, 5);
@@ -15,7 +25,7 @@ int main() {
     printQueue(queue);
 
     deQueue(&queue);
-    top(&queue);
+    printf("Top: %d\n", peek(&queue));
     deQueue(&queue);
     deQueue(&queue);
     printQueue(queue);
